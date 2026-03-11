@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DirectProperty ET</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav>
+        <h1>DirectProperty ET</h1>
+        <a href="#subscribe" class="btn">Subscribe</a>
+      </nav>
+      <div class="hero-content">
+        <h2>Find Your Perfect Home Directly – No Middlemen</h2>
+        <p>Connect landlords, sellers, renters, and buyers across Ethiopia with smart matching.</p>
+        <a href="#subscribe" class="btn btn-primary">Subscribe Now – 500 Birr/year</a>
+      </div>
+    </header>
+
+    <section id="how-it-works">
+      <h3>How it Works</h3>
+      <ol>
+        <li>Create your account and choose your role.</li>
+        <li>Landlords/Sellers publish listings with details and images.</li>
+        <li>Renters/Buyers submit preferences for price, size, and location.</li>
+        <li>DirectProperty ET automatically matches and notifies users instantly.</li>
+      </ol>
+    </section>
+
+    <section id="features" class="alt">
+      <h3>Features</h3>
+      <ul>
+        <li>Direct connection between owners and seekers.</li>
+        <li>Automated preference-based property matching.</li>
+        <li>Save commissions and close deals transparently.</li>
+      </ul>
+    </section>
+
+    <section id="pricing">
+      <h3>Pricing</h3>
+      <div class="pricing-grid">
+        <article>
+          <h4>Annual Subscription</h4>
+          <p class="price">500 Birr/year</p>
+        </article>
+        <article>
+          <h4>Transaction Fees</h4>
+          <p>Rentals: <strong>10%</strong></p>
+          <p>Sales: <strong>2%</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="subscribe" class="alt">
+      <h3>Subscribe</h3>
+      <form id="subscribe-form" action="/subscribe" method="POST">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <button type="submit" class="btn btn-primary">Activate Subscription</button>
+      </form>
+      <p id="response"></p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> DirectProperty ET. Built for Ethiopia.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
