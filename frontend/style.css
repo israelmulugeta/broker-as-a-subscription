@@ -1,0 +1,87 @@
+:root {
+  --primary: #00695c;
+  --dark: #1c1c1c;
+  --light: #f7f8fb;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+}
+
+.hero {
+  background: linear-gradient(140deg, #0d9488, #047857);
+  color: white;
+  padding: 1rem 2rem 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin-top: 3rem;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.alt {
+  background: var(--light);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+article {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+form {
+  display: grid;
+  gap: 0.7rem;
+  max-width: 500px;
+}
+
+input {
+  padding: 0.6rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111827;
+  color: white;
+}
